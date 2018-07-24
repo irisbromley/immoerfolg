@@ -1,0 +1,115 @@
+.masthead {
+    margin: 30px auto;
+    max-width: 800px;
+    width: 100%;
+}
+.logo {
+    width: 300px;
+}
+a:link, a:visited {
+    color: rgb(101, 122, 225);
+    text-decoration: none;
+}
+
+.slide {
+    text-align: center;
+    margin: 0 5px;
+}
+.slide img {
+max-width: 100%;
+margin-bottom: -4px;
+}
+.header-links a{
+    margin: 30px 50px; 
+}
+.footer-links a{
+    margin-right: 30px;
+}
+
+.footer-links a:link, .footer-links a:visited {
+    color: rgb(20, 46, 180);
+}
+
+header{
+    display: flex;
+    background-color: rgb(50, 50, 82);
+    padding-left: 10px;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+margin: 0;
+}
+
+.carousel{
+    margin: 100px 0;
+}
+.wrapper {
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    max-width: 800px;
+    box-shadow: 0 3px 5px 0  rgba(0,0,0,0.31);
+    margin-bottom: 6px;
+}
+.description {
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0px;
+    background-color: #ffffffb0;
+    font-size: 19px;
+}
+.slide-select-btn{
+    background-color: #c9c9c9;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.slide-select-btn.selected {
+    background-color: rgb(55, 11, 216);
+}
+.select-btns {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.text {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.8);
+    margin: auto;
+    line-height: 1.4em;
+    max-width: 800px;
+    margin-bottom: 120px;
+    margin-top: 80px;
+    padding-left: 10px;
+}
+footer {
+    font-size: 16px;
+    background: rgb(51, 51, 51, 0.61);
+    color: rgb(255, 255, 255);
+    padding: 40px 80px;
+}
+.footer_logo img {
+    width: 100%;
+    max-width: 200px;
+    margin-top: 20px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 800px;
+}
+
+@media screen and (max-width: 600px) {
+    .row {
+        flex-direction: column;
+    }
+    footer {
+        padding: 10px;
+    }
+}
