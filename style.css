@@ -1,17 +1,66 @@
 .masthead {
-    margin: 30px auto;
-    max-width: 800px;
+    margin: auto;
+    max-width: 900px;
     width: 100%;
 }
+
 .logo {
-    max-width:225px;
+    max-width:400px;
 }
+
 a:link, a:visited {
     color: rgb(101, 122, 225);
     text-decoration: none;
 }
+.whitespace{
+    height: 50px;
+}
 
-.slide {
+header{
+    display: flex;
+    background-color: rgb(16, 35, 59);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.548);
+    min-height: 300px;
+    background-image: url(Images/rendering_b_final.jpg);
+    background-size: cover;
+    background-position-y: -205px;
+    background-blend-mode: overlay;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    background: rgb(247, 247, 247);
+}
+.gallery-row .gallery-item img:last-of-type{
+    margin-right: 0;
+}
+
+.gallery-row{
+    display: flex;
+    padding-bottom: 25px;
+}
+
+.gallery-item{
+    position: relative;
+    margin: auto;
+}
+.gallery-item img{
+    max-width: 250px;
+}
+.description {
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 5px 0px;
+    background-color: #ffffffb0;
+    font-size: 14px;
+}
+
+/* carousel
+
+/* .slide {
     text-align: center;
     margin: 0 5px;
 }
@@ -19,29 +68,13 @@ a:link, a:visited {
 .slide img {
 max-width: 100%;
 margin-bottom: -5px;
-}
+} */
 
-.header-links a{
-    margin: 30px 50px; 
-}
-
-header{
-    display: flex;
-    background-color: rgb(16, 35, 59);
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.548)
-}
-
-body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 0;
-}
-
-.carousel{
+/* .carousel{
     margin: 100px 0;
     margin-top: 0;
     position: relative;
 }
-
 .wrapper {
     position: relative;
     overflow: hidden;
@@ -59,13 +92,13 @@ body {
     padding: 10px 0px;
     background-color: #ffffffb0;
     font-size: 15px;
-}
+} */
 
 .slide-select-btn{
     background-color: #c9c9c9;
     width: 10px;
     height: 10px;
-    border-radius: 50%;
+    border-radius: 3px;
     margin-right: 10px;
     cursor: pointer;
 }
@@ -79,25 +112,69 @@ body {
 }
 
 .content {
-    font-size: 16px;
-    color: rgba(22, 22, 22, 0.8);
+    font-size: 1.125em;
     margin: auto;
     line-height: 1.6em;
     letter-spacing: -.003em;
-    max-width: 800px;
+    max-width: 900px;
     margin-top: 30px;
     margin-bottom: 30px;
-    padding: 30px 40px;
     text-align: start;
     padding-bottom: 0px;
 }
 
+.content p{
+    color: rgba(22, 22, 22, 0.8);
+}
+.content h2{
+    font-weight: bold;
+    color: rgba(16, 35, 59, 0.9);
+}
+h3{
+    color: rgba(16, 35, 59, 0.9);
+}
+
 p { 
     padding: 0px 0px;
+    color: rgb(165, 165, 165);
+}
+
+.container h3{
+    margin-top: 0px;
+}
+.container{
+    flex: 1;
+}
+.container p{
+    padding-right: 20px;
+}
+
+.container img{
+    max-width: 100%;
+}
+h1{
+    margin-top: -40%;
+    position: relative;
+    text-align: center;
+    margin-bottom: 40%;
+    color: whitesmoke;
+}
+button{
+    background-color:rgb(16, 35, 59);
+    border: none;
+    color: rgb(255, 255, 255);
+    border-radius: 3px;
+    padding: 10px 50px;
+    font-size: 1.125em;
+    cursor: pointer;
+    }
+button:hover{
+    background-color:rgba(20, 60, 108);
+    border: none
 }
 
 p:last-of-type {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .breakline{
@@ -108,7 +185,7 @@ p:last-of-type {
     display: block;
     margin: 10px auto 20px;
 }
-
+/* carousel start */
 .direction-arrow {
     font-size: 64px;
     color: #303030;
@@ -148,39 +225,46 @@ p:last-of-type {
       justify-content: space-between;
       margin-top: 14%;
   }
+/* carousel end */
 
-.form-style-6{
+.form{
     font: 80% -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    max-width: 550px;
+    max-width: 700px;
     margin: 30px auto;
     padding: 16px;
-    background: rgba(225, 225, 225);
+    background: rgba(225, 225, 225, 0.404);
     margin-bottom: 90px;
-    border-radius: 10px;
+    border-radius: 3px;
 }
 
-.form-style-6 h1{
-    background:rgba(225, 225, 225);
+.form h1{
     padding: 20px 0;
     font-size: 140%;
     font-weight: 300;
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: rgb(16, 35, 59);
     margin: -16px -16px 16px -16px;
-    border-radius: 10px;
+    border-radius: 3px;
     margin: 2px;
 }
-
-.form-style-6 input[type="text"],
-.form-style-6 input[type="date"],
-.form-style-6 input[type="datetime"],
-.form-style-6 input[type="email"],
-.form-style-6 input[type="number"],
-.form-style-6 input[type="search"],
-.form-style-6 input[type="time"],
-.form-style-6 input[type="url"],
-.form-style-6 textarea,
-.form-style-6 select{
+.row select.Anrede{
+    max-width: fit-content;
+    margin-right: 1%;
+}
+.form .row input:first-of-type{
+    max-width: 120px;
+    margin-right: 1%;
+}
+.form input[type="text"],
+.form input[type="date"],
+.form input[type="datetime"],
+.form input[type="email"],
+.form input[type="number"],
+.form input[type="search"],
+.form input[type="time"],
+.form input[type="url"],
+.form textarea,
+.form select{
     -webkit-transition: all 0.30s ease-in-out;
     -moz-transition: all 0.30s ease-in-out;
     -ms-transition: all 0.30s ease-in-out;
@@ -190,59 +274,48 @@ p:last-of-type {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     width: 100%;
-    background: rgb(252, 252, 255);
+    background: rgba(255, 255, 255, 0.5);
     margin-bottom: 4%;
     border: 1px solid rgb(252, 252, 255);
-    border-radius: 10px;
+    border-radius: 3px;
     padding: 3%;
     color: #555;
     font: 95% -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-textarea{
-    max-width: 550px;
-}
-
-.form-style-6 input[type="text"]:focus,
-.form-style-6 input[type="date"]:focus,
-.form-style-6 input[type="datetime"]:focus,
-.form-style-6 input[type="email"]:focus,
-.form-style-6 input[type="number"]:focus,
-.form-style-6 input[type="search"]:focus,
-.form-style-6 input[type="time"]:focus,
-.form-style-6 input[type="url"]:focus,
-.form-style-6 textarea:focus,
-.form-style-6 select:focus {
+.form input[type="text"]:focus,
+.form input[type="date"]:focus,
+.form input[type="datetime"]:focus,
+.form input[type="email"]:focus,
+.form input[type="number"]:focus,
+.form input[type="search"]:focus,
+.form input[type="time"]:focus,
+.form input[type="url"]:focus,
+.form textarea:focus,
+.form select:focus {
     box-shadow: 0 0 5px rgb(50, 50, 82);
     padding: 3%;
     border: 1px solid rgb(50, 50, 82);
-    border-radius: 10px;
+    border-radius: 3px;
 }
 
-.form-style-6 input[type="submit"],
-.form-style-6 input[type="button"]{
+.form input[type="submit"],
+.form input[type="button"]{
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    width: 100%;
-    padding: 3%;
-    background: rgb(20, 60, 108);
-    border-bottom: 2px solid rgb(225, 225, 225);
-    border-radius: 7px;
-    border-top-style: none;
-    border-right-style: none;
-    border-left-style: none;    
+    padding: 10px 50px;
+    background: rgb(16, 35, 59);
+    border-radius: 3px;
+    border:none; 
     color: rgb(255,255,255);
     font-size: 140%;
     cursor: pointer;
 }
 
-.form-style-6 input[type="submit"]:hover,
-.form-style-6 input[type="button"]:hover{
-    background: rgb(16, 35, 59);
-}
-.checkbox_text p{
-    margin: 0px;
+.form input[type="submit"]:hover,
+.form input[type="button"]:hover{
+    background: rgb(20, 60, 108);
 }
 
 footer {
@@ -250,11 +323,16 @@ footer {
     background: rgba(16, 35, 59);
     color: rgb(181, 181, 181);
     padding: 20px 40px;
+    background-image: url(Images/rendering_b_final.jpg);
+    background-size: cover;
+    background-position-y: -370px;
+    background-blend-mode: overlay;
 }
 
 .sub-footer{
     background-color: rgb(20, 60, 108);
     padding: 10px 40px;
+    min-height: 65px;
 }
 .column-copyright{
     padding-top: 15px;
@@ -264,31 +342,69 @@ footer {
 .footer-logo img {
     width: 100%;
     max-width: 250px;
-    margin-top: 20px;
+    margin: 20px 0;
 }
 .footer-links a{
     margin-right: 30px;
 }
 .footer-links{
-    padding-top: 30px;
+    padding-top: 15px;
 }
 .footer-links a:link, .footer-links a:visited {
-    color: rgb(181, 181, 181);
+    color: rgb(84, 105, 173);
 }
 
 .row {
     display: flex;
     justify-content: space-between;
     margin: auto;
-    max-width: 800px;
+    max-width: 900px;
+    width: 100%;
 }
 
+.modal-overlay {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+}
+
+.modal-overlay.visible {
+    visibility: visible;
+}
+
+.modal-content {
+    width: 100%;
+    max-width: 440px;
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0px 10px 15px -7px rgba(0,0,0,0.75);
+    text-align: center;
+}
+
+/* Mobile styles */
 @media screen and (max-width: 860px) {
-    .logo{
-        padding-left: 20px;
+    header .content .footer .sub-footer{
+        padding: 0 20px;
     }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 425px) {
+    .logo{
+        max-width: 95%;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .gallery-row{
+        flex-direction: column;
+    }
     .row {
         flex-direction: column;
     }
@@ -296,10 +412,10 @@ footer {
         padding: 20px;
     }
     .sub-footer{
-        padding: 20px;
+        padding: 20px 20px 40px 20px;
     }
     .logo{
-        padding-left: 20px;
+        max-width: 350px;
     }
     .content{
         margin: 0px;
