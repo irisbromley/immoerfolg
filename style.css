@@ -407,6 +407,15 @@ footer {
     header, .content, .footer, .sub-footer{
         padding: 0 20px;
     }
+    header{
+    min-height: auto;
+    }
+    .masthead{
+    padding-top: 10px;
+    }
+    .whitespace{
+        height: 20px;
+    }
 }
 
 @media screen and (max-width: 830px){
