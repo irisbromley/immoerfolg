@@ -141,6 +141,7 @@ h3{
 p { 
     padding: 0px 0px;
     color: rgb(165, 165, 165);
+    text-align: justify;
 }
 .column-text p{
     margin: 0;
