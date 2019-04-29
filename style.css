@@ -177,12 +177,11 @@ button{
     padding: 10px 50px;
     font-size: 1.125em;
     cursor: pointer;
-    float: right;
     }
 
 button:hover{
     background-color:rgba(20, 60, 108);
-    border: none
+    border: none;
 }
 
 .breakline{
@@ -437,10 +436,13 @@ footer {
     .form input[type="email"],
           input[type="text"]:first-of-type,
           select[class="Anrede"]{
-        max-width: 100%;
+         max-width: 100%;
     }
     .footer{
         background-position: bottom;
+    }
+    .modal-content button{
+        float: none;
     }
 }
 
@@ -451,9 +453,9 @@ footer {
     header{
         background-position-y: 0;
     }
-
     .carousel{
         display: block;
+        margin-bottom: 0px;
     }
     .gallery{
         display: none
