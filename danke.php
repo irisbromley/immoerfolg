@@ -278,22 +278,22 @@
 
     <div class="form">
         <h1>Anfrage Formular</h1>
-        <form method="post" action="danke.php">
+        <form>
             <div class="row">
-                <select class="Anrede" name="anrede">
+                <select class="Anrede">
                     <option>Anrede</option>
                     <option>Frau</option>
                     <option>Herr</option>
                 </select>
-                <input type="text" name="titel" placeholder="Titel"/>
-                <input type="text" name="name" placeholder="Vor-/Zuname" required />
+                <input type="text" name="field1" placeholder="Titel"/>
+                <input type="text" name="field2" placeholder="Vor-/Zuname" required />
             </div>
             <div class="row">
-                <input type="email" name="email" placeholder="Email" required/>
-                <input type="text" name="phone" placeholder="Telefon" />
+                <input type="email" name="field3" placeholder="Email" required/>
+                <input type="text" name="field4" placeholder="Telefon" />
             </div>
             
-            <textarea name="message" placeholder="Ihre Nachricht..."></textarea><br>
+            <textarea name="field5" placeholder="Ihre Nachricht..."></textarea><br>
             <input type="checkbox" required>
             Ich bin mit der Weiterverarbeitung meiner angegebenen Daten zum alleinigen
             Zweck der schriftlichen Information (per E-Mail) über das Angebot
@@ -339,8 +339,30 @@
 
     <div class="modal-overlay">
         <div class="modal-content">
-            Vielen Dank f&uuml;r Ihre Nachricht,<br> wir melden uns in K&uuml;rze!<br><br>
-            <button>Alles klar!</button>
+            <?php
+            $anrede = $_POST['anrede'];
+            $titel = $_POST['titel'];
+            $name = $_POST['name'];
+            $email = $_POST['email'];
+            $phone = $_POST['phone'];
+            $message = $_POST['message'];
+            $body="_________________________________ \n Anfrage für 3STG: \n Absender: $anrede $titel $name \n E-Mail: $email \n Telefonnummer: $phone \n Nachricht: $message ";
+            $to = "iris.pfeffer@gmx.at";
+            $subject = "Anfrage für 3STG";
+            if($name != "" && $email != ""){  
+            if (mail($to, $subject, $body)) {
+               echo("<div class='modal-content'>Vielen Dank f&uuml;r Ihre Nachricht,<br> wir melden uns in K&uuml;rze!<br><br>
+                <button>LOL!</button>");
+              } else {
+               echo("<div class='modal-content'>TBA
+                <button>Alles klar!</button>");
+              }  
+            } else  
+            {  
+            echo "<div class='modal-content'>TBA
+                <button>Alles klar!</button>";
+            }
+        ?>
         </div>
     </div>
 
