@@ -393,6 +393,16 @@ footer {
     visibility: visible;
 }
 
+.modal-content .error {
+    display: none;
+}
+.modal-overlay.error .error {
+    display: block;
+}
+.modal-overlay.error .success {
+    display: none;
+}
+
 .modal-content {
     width: 100%;
     max-width: 440px;
