@@ -448,6 +448,7 @@ footer {
           input[type="text"]:first-of-type,
           select[class="Anrede"]{
          max-width: 100%;
+         vertical-align: middle;
     }
     .footer{
         background-position: bottom;
