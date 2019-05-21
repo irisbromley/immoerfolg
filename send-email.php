@@ -6,7 +6,7 @@ $email = $_POST['email'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
 $body="_________________________________ \n Anfrage für IMMOERFOLG: \n Absender: $anrede $titel $name \n E-Mail: $email \n Telefonnummer: $phone \n Nachricht: $message ";
-$to = "office@immoerfolg.com";
+$to = "office@immoerfolg.at";
 $subject = "Anfrage für IMMO";
 if($name != "" && $email != ""){  
     echo mail($to, $subject, $body);
