@@ -3,6 +3,9 @@
     max-width: 900px;
     width: 100%;
 }
+.masthead p{
+    margin-top: 0px;
+}
 
 .logo {
     max-width:400px;
@@ -374,6 +377,7 @@ footer {
     margin: auto;
     max-width: 900px;
     width: 100%;
+    padding-top: 20px;
 }
 
 .modal-overlay {
